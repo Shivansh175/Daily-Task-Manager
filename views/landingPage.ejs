@@ -1,24 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Document</title>
-</head>
-<body>
-  <nav class="bg-purple-500 px-14 py-4 flex justify-between text-white">
-    <h1 class="font-bold text-xl">
-      DailyPilot
-    </h1>
-    <ul class="flex justify-end space-x-16">
-      <li><a href="">Home</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">SignIn</a></li>
-    </ul>
-  </nav>
+<%- include("partials/header.ejs") %>
   <main>
+    <div class="container flex content-center justify-center px-10 py-7 ">
+      <div class="flex-col w-3/5 text-6xl py-32">
+        <p class="mb-10"><b class="text-purple-600 font-normal">Welcome to DailyPilot,</b> where simplicity meets productivity. Let's make your day effortlessly organized.</p>
+        <a href="/login" class="bg-purple-600 text-white rounded-xl px-8 py-4 text-3xl ">Get Started</a>
 
+      </div>
+
+    </div>
+    <div class="about flex justify-center content-center px-20 py-20 bg-gray-100">
+      <div class="text flex flex-col w-7/12 pr-20 ">
+        <h2 class="text-4xl font-normal mb-6">Discover a tool that not only simplifies your tasks but transforms your entire approach to productivity.</h2>
+        <p class="text-3xl text-gray-600 font-light">At DailyPoint, we believe in the power of simplicity to transform the way you approach your day. Our mission is to provide a seamless and intuitive experience that empowers you to effortlessly manage your tasks. Whether you're a busy professional, a student, or anyone striving for a more organized life, DailyPoint is here to simplify your journey towards productivity.</p>
+      </div>
+      <img src="images/Sample_UI (2).png" class="w-5/12 rounded-xl shadow-lg" alt="">
+    </div>
   </main>
-</body>
-</html>
+  <%- include("partials/footer.ejs") %>
