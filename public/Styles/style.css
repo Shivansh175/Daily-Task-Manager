@@ -1,0 +1,22 @@
+.visible{
+    display: flex !important;
+}
+.blurred{
+    /* -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); */
+    /* filter: blur(1px); */
+    
+    /* backdrop-filter: saturate(180%)blur(20px) !important; */
+    /* filter: blur(15px)brightness(0.5); */
+    opacity: 0.6;
+}
+.taskBox .list li{
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem/* 16px */;
+    background-color: rgb(229 231 235);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size : 1.125rem;
+    line-height : 1.75rem;
+}

@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 
 const port=3000;
 const app=express();
+var task;
 
 var data=[{"email":"goelshivansh175@gmail.com","password":"hello"}];
 
@@ -35,6 +36,10 @@ app.post("/createUser",(req,res)=>{
     res.render("index.ejs");
 });
 
+app.post("/addTask",(req,res)=>{
+    task=req.body["task"];
+});
+
 app.post("/checkUser",(req,res)=>{
     data.forEach(element => {
         if(req.body["email"]===element["email"] && req.body["password"]===element["password"])
@@ -43,7 +48,7 @@ app.post("/checkUser",(req,res)=>{
         }
         else
         {
-            alert("Wrong email or password! ");
+            res.render("login.ejs");
         }
     });
 });
